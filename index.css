@@ -609,3 +609,129 @@ footer .list-inline-item {
     font-size: 0.9rem; /* Adjust text size for readability */
   }
 }
+
+/* Default Typing Animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
+.typing-effect {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15em solid black;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  width: 100%; /* Ensure the text takes up the full width */
+  max-width: 100%; /* Prevent overflow */
+  word-wrap: break-word; /* Ensure text wraps if needed */
+  box-sizing: border-box; /* Include padding and border in the element's width and height */
+}
+
+/* Ensure text containers are responsive */
+#sup-text,
+#headline-text,
+#sub-text {
+  display: inline-block;
+  width: 100%; /* Make sure it fits the full width */
+  overflow: hidden;
+  white-space: nowrap;
+  word-wrap: break-word;
+  text-align: center; /* Center the text */
+  box-sizing: border-box; /* Include padding and border in the element's width and height */
+}
+
+#headline-text {
+  font-size: 2em; /* Adjust font size as needed */
+  max-width: 100%; /* Prevent text overflow */
+  margin: 0 auto; /* Center the text container */
+  padding: 0 10px; /* Add padding for spacing */
+}
+
+#sup-text {
+  font-size: 1em; /* Adjust as needed */
+  display: block;
+  margin-bottom: 10px; /* Space between sup and headline */
+  max-width: 100%; /* Prevent text overflow */
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#sub-text {
+  display: block;
+  font-size: 1.2em; /* Adjust as needed */
+  margin-top: 20px;
+  max-width: 100%; /* Prevent text overflow */
+  padding: 0 10px; /* Add padding for spacing */
+}
+
+/* Adjustments for medium-sized screens (768px - 992px) */
+@media (min-width: 769px) and (max-width: 1300px) {
+  #headline-text {
+    font-size: 1.2em; /* Reduce font size for better fit on smaller screens */
+  }
+
+  #sub-text {
+    font-size: 0.8em; /* Reduce font size for better fit on smaller screens */
+  }
+
+  .typing-effect {
+    font-size: 1.4em; /* Adjust font size to match headline text */
+  }
+
+  #sup-text {
+    font-size: 0.15em; /* Adjust super text size */
+  }
+}
+
+/* Adjustments for smaller screens (<768px) */
+@media (max-width: 768px) {
+  #headline-text {
+    font-size: 1.4em; /* Reduce font size for better fit on smaller screens */
+  }
+
+  #sub-text {
+    font-size: 1em; /* Reduce font size for better fit on smaller screens */
+  }
+
+  .typing-effect {
+    font-size: 1.4em; /* Adjust font size to match headline text */
+  }
+
+  #sup-text {
+    font-size: 0.85em; /* Adjust super text size */
+  }
+}
+
+/* Adjustments for very small screens (<576px) */
+@media (max-width: 576px) {
+  #headline-text {
+    font-size: 1.2em; /* Further reduce font size on very small screens */
+  }
+
+  #sub-text {
+    font-size: 0.9em; /* Further reduce font size on very small screens */
+  }
+
+  .typing-effect {
+    font-size: 1.2em; /* Adjust font size to match headline text */
+  }
+
+  #sup-text {
+    font-size: 0.75em; /* Further reduce super text size */
+  }
+}
