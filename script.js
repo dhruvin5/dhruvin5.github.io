@@ -12,8 +12,7 @@ function toggleDarkMode() {
 document.addEventListener("DOMContentLoaded", function () {
   const supText = "Meet Dhruvin Gandhi";
   const headlineText = "Innovating through code, one solution at a time.";
-  const subText =
-    "I use technology to connect people and help others reach their full potential.";
+  const subText = "Inspired by curiosity, driven by possibility";
 
   // Start typing the sup text first
   typeEffect(document.getElementById("sup-text"), supText, 50, function () {

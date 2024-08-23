@@ -686,7 +686,7 @@ footer .list-inline-item {
   }
 
   #sub-text {
-    font-size: 0.8em; /* Reduce font size for better fit on smaller screens */
+    font-size: 1.1em; /* Reduce font size for better fit on smaller screens */
   }
 
   .typing-effect {
