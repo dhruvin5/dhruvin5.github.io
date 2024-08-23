@@ -71,7 +71,7 @@
     <header class="text-center p-section">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-6 offset-md-3">
+          <div class="col-md-6 offset-md-3 col-sm-12">
             <sup id="sup1-text">MEET DHRUVIN GANDHI</sup>
             <sup id="sup-text"></sup>
             <h1 id="headline-text"></h1>
@@ -93,9 +93,13 @@
         <h2 class="mb-5 underline">I am Dhruvin Gandhi</h2>
 
         <div class="row flex-row">
-          <div class="col-sm-4">
+          <div class="col-md-4 col-sm-12 mb-4">
             <div class="p-3 sticky-top" style="top: 85px">
-              <img src="images/headshot.png" class="circle mb-3" />
+              <img
+                src="images/headshot.png"
+                class="circle mb-3 img-fluid"
+                alt="Headshot"
+              />
 
               <ul class="list-inline mb-0 text-center">
                 <li class="list-inline-item h4 mb-0 me-3 ms-4">
@@ -134,13 +138,13 @@
             </div>
           </div>
 
-          <div class="col-sm-8">
+          <div class="col-md-8 col-sm-12">
             <blockquote>Actively writing code and solving problems.</blockquote>
 
             <a href="https://leetcode.com/u/dhruvin55/" target="_blank">
               <img
                 src="images/activity.png"
-                class="mb-3"
+                class="mb-3 img-fluid"
                 alt="Activity Image"
               />
             </a>
@@ -176,9 +180,8 @@
                 href="files/DhruvinGandhi_Resume.pdf"
                 class="btn btn-primary"
                 id="downloadResume"
+                ><i class="bi-download"></i> Download Resume</a
               >
-                <i class="bi-download"></i> Download Resume
-              </a>
               <a href="mailto:dhruvinrakes@umass.edu" class="btn btn-primary"
                 ><i class="bi-envelope"></i> Send Email</a
               >
@@ -196,12 +199,12 @@
 
         <div class="timeline">
           <!-- Interactive Brokers -->
-          <div class="timeline-item">
+          <div class="timeline-item mb-4">
             <div class="timeline-icon">
               <img
                 src="images/ib.png"
                 alt="Interactive Brokers"
-                class="rounded-circle"
+                class="rounded-circle img-fluid"
               />
             </div>
             <div class="timeline-content">
@@ -218,12 +221,12 @@
           </div>
 
           <!-- VJTI -->
-          <div class="timeline-item">
+          <div class="timeline-item mb-4">
             <div class="timeline-icon">
               <img
-                src="images/vjti-1.png"
+                src="images/vjti-2.jpg"
                 alt="VJTI Mumbai"
-                class="rounded-circle"
+                class="rounded-circle img-fluid"
               />
             </div>
             <div class="timeline-content">
@@ -242,12 +245,12 @@
           </div>
 
           <!-- Morgan Stanley -->
-          <div class="timeline-item">
+          <div class="timeline-item mb-4">
             <div class="timeline-icon">
               <img
                 src="images/morgan-stanley.jpeg"
                 alt="Morgan Stanley"
-                class="rounded-circle"
+                class="rounded-circle img-fluid"
               />
             </div>
             <div class="timeline-content">
@@ -263,12 +266,12 @@
           </div>
 
           <!-- Jobdae -->
-          <div class="timeline-item">
+          <div class="timeline-item mb-4">
             <div class="timeline-icon">
               <img
                 src="images/jobdae.jpeg"
                 alt="Jobdae"
-                class="rounded-circle"
+                class="rounded-circle img-fluid"
               />
             </div>
             <div class="timeline-content">
@@ -291,10 +294,15 @@
         <h2 class="mb-5 underline">Projects</h2>
 
         <div class="row mb-5">
-          <div class="col-sm-4">
+          <div class="col-lg-4 col-sm-6 mb-4">
             <div class="card h-100">
               <div class="background-image" style="width: 100%; height: 200px">
-                <img src="images/a2.png" style="width: 100%; height: 200px" />
+                <img
+                  src="images/a2.png"
+                  style="width: 100%; height: 200px"
+                  alt="Project Image"
+                  class="img-fluid"
+                />
               </div>
               <div class="card-body">
                 <h3>Context Aware Visual Question Answering</h3>
@@ -320,10 +328,14 @@
             </div>
           </div>
 
-          <div class="col-sm-4">
+          <div class="col-lg-4 col-sm-6 mb-4">
             <div class="card h-100">
               <div class="background-image" style="height: 200px">
-                <img src="images/personalize.png" />
+                <img
+                  src="images/personalize.png"
+                  alt="Project Image"
+                  class="img-fluid"
+                />
               </div>
               <div class="card-body">
                 <h3>Personalizing LLM using Generative Retrieval</h3>
@@ -343,19 +355,20 @@
                 <a
                   href="https://github.com/dhruvin5/Personalized-Language-Model-Tailoring-Two-Phase-Approach-for-Customized-Content-Generation/blob/main/paper.pdf"
                   class="btn btn-sm btn-primary float-end"
-                >
-                  Paper</a
+                  >Paper</a
                 >
               </div>
             </div>
           </div>
 
-          <div class="col-sm-4">
+          <div class="col-lg-4 col-sm-6 mb-4">
             <div class="card h-100">
               <div class="background-image">
                 <img
                   src="images/fault.webp"
                   style="width: 100%; height: 200px"
+                  alt="Project Image"
+                  class="img-fluid"
                 />
               </div>
               <div class="card-body">
@@ -364,7 +377,7 @@
                   Implemented a multi-threaded Fault-tolerant replicated
                   datastore algorithm using Zookeeper as the centralized
                   service, ensuring consistency across replicated servers
-                  experiencing 1000 requests/sec from numerous clients
+                  experiencing 1000 requests/sec from numerous clients.
                 </p>
               </div>
               <div class="card-footer">
@@ -380,10 +393,14 @@
         </div>
 
         <div class="row mb-5">
-          <div class="col-sm-4">
+          <div class="col-lg-4 col-sm-6 mb-4">
             <div class="card h-100">
               <div class="background-image" style="height: 200px">
-                <img src="images/farm-mart.jpeg" />
+                <img
+                  src="images/farm-mart.jpeg"
+                  alt="Project Image"
+                  class="img-fluid"
+                />
               </div>
               <div class="card-body">
                 <h3>Farm Mart</h3>
@@ -406,10 +423,14 @@
             </div>
           </div>
 
-          <div class="col-sm-4">
+          <div class="col-lg-4 col-sm-6 mb-4">
             <div class="card h-100">
               <div class="background-image" style="height: 200px">
-                <img src="images/docucare.png" />
+                <img
+                  src="images/docucare.png"
+                  alt="Project Image"
+                  class="img-fluid"
+                />
               </div>
               <div class="card-body">
                 <h3>DocuCare</h3>
@@ -431,7 +452,7 @@
             </div>
           </div>
 
-          <div class="col-sm-4">
+          <div class="col-lg-4 col-sm-6 mb-4">
             <div class="card h-100">
               <div
                 class="background-image"
@@ -440,6 +461,8 @@
                 <img
                   src="images/hisab.jpeg"
                   style="width: 100%; height: 100%; object-fit: cover"
+                  alt="Project Image"
+                  class="img-fluid"
                 />
               </div>
               <div class="card-body">
@@ -483,9 +506,8 @@
             target="_blank"
             href="https://www.linkedin.com/in/dhruvin-gandhi-7672b8198/"
             class="btn btn-light shadow-btn"
+            ><i class="bi-github"></i> More Projects on Github</a
           >
-            <i class="bi-github"></i> More Projects on Github
-          </a>
         </div>
       </div>
     </section>
@@ -495,7 +517,7 @@
         <h2 class="mb-5 underline">Education</h2>
 
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 col-sm-12 mb-4">
             <div class="education-item mb-4">
               <h4>Master of Science in Computer Science</h4>
               <p class="text-muted mb-1">University of Massachusetts Amherst</p>
@@ -505,14 +527,13 @@
                 <li>
                   Relevant Courses: Machine Learning, Distributed Computing and
                   Systems, NLP, Information Retrieval, Data Science
-                  Fundamentals, Software Egineering
+                  Fundamentals, Software Engineering
                 </li>
-                <li></li>
               </ul>
             </div>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-md-6 col-sm-12 mb-4">
             <div class="education-item mb-4">
               <h4>Bachelor of Technology in Computer Engineering</h4>
               <p class="text-muted mb-1">
@@ -523,7 +544,7 @@
                 <li>GPA: 9.13/10</li>
                 <li>
                   Relevant Courses: Data Structures, Algorithms, Operating
-                  Systems, Database System
+                  Systems, Database Systems
                 </li>
                 <li>
                   Final Project: "AI-Based Information Extraction System for
@@ -535,13 +556,14 @@
         </div>
       </div>
     </section>
+
     <section id="testimonials" class="p-section">
       <div class="container">
         <sup>Testimonials</sup>
         <h2 class="mb-5 underline">Kind Words<br />from Colleagues</h2>
 
         <div class="row">
-          <div class="col-sm-4">
+          <div class="col-md-4 col-sm-12 mb-4">
             <div class="p-3">
               <blockquote class="quotation">“Curious Researcher”</blockquote>
               <p class="lead">
@@ -557,7 +579,7 @@
             </div>
           </div>
 
-          <div class="col-sm-4">
+          <div class="col-md-4 col-sm-12 mb-4">
             <div class="p-3">
               <blockquote class="quotation">“Team Player”</blockquote>
               <p class="lead">
@@ -573,7 +595,7 @@
             </div>
           </div>
 
-          <div class="col-sm-4">
+          <div class="col-md-4 col-sm-12 mb-4">
             <div class="p-3">
               <blockquote class="quotation">“Problem solver”</blockquote>
               <p class="lead">
@@ -597,7 +619,7 @@
           <h2 class="mb-5 text-center underline">My Publications & Skills</h2>
 
           <div class="row">
-            <div class="col-sm-4">
+            <div class="col-md-4 col-sm-12 mb-4">
               <h3><i class="bi-journal-text me-2"></i> Recent Publications</h3>
               <ul class="list-unstyled">
                 <li class="mb-3">
@@ -658,7 +680,7 @@
               </ul>
             </div>
 
-            <div class="col-sm-4">
+            <div class="col-md-4 col-sm-12 mb-4">
               <h3><i class="bi-laptop me-2"></i> Technologies & Tools</h3>
               <ul class="list-unstyled">
                 <li class="mb-3">
@@ -692,7 +714,7 @@
               </ul>
             </div>
 
-            <div class="col-sm-4">
+            <div class="col-md-4 col-sm-12 mb-4">
               <h3><i class="bi-lightbulb me-2"></i> Research Interests</h3>
               <ul class="list-unstyled">
                 <li class="mb-3">
@@ -752,10 +774,9 @@
           <a
             target="_blank"
             href="https://www.linkedin.com/in/dhruvin-gandhi-7672b8198/"
-            class="btn btn-light m-2"
+            class="btn btn-primary m-2"
+            ><i class="bi-linkedin"></i> Connect on LinkedIn</a
           >
-            <i class="bi-linkedin"></i> Connect on LinkedIn
-          </a>
 
           <!-- Calendly link widget begin -->
           <link
@@ -775,9 +796,9 @@
           >
           <!-- Calendly link widget end -->
 
-          <a href="mailto:dhruvinrakes@umass.edu" class="btn btn-light m-2">
-            <i class="bi-envelope"></i> Send an Email
-          </a>
+          <a href="mailto:dhruvinrakes@umass.edu" class="btn btn-light m-2"
+            ><i class="bi-envelope"></i> Send an Email</a
+          >
         </div>
       </div>
     </section>
@@ -785,12 +806,12 @@
     <footer class="bg-black p-5 text-white">
       <div class="container">
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-md-6 col-sm-12">
             <!-- Add your preferred content here, like "About Me" or "Contact Information" -->
           </div>
 
-          <div class="col-sm-6">
-            <ul class="list-inline float-end">
+          <div class="col-md-6 col-sm-12 text-center text-md-end">
+            <ul class="list-inline">
               <li class="list-inline-item h4 mb-0 me-3">
                 <a
                   href="https://www.linkedin.com/in/dhruvin-gandhi-7672b8198/"

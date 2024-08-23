@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
 
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 h1,
 .h1,
 h2,
@@ -157,6 +165,50 @@ header.p-section {
   padding: 0 0.25em;
   bottom: 0.2em;
 }
+
+/* Responsive Typography */
+@media (max-width: 1000px) {
+  h1,
+  .h1 {
+    font-size: 45px;
+  }
+
+  h2,
+  .h2 {
+    font-size: 35px;
+  }
+
+  blockquote {
+    font-size: 24px;
+  }
+
+  header.p-section {
+    padding: 100px 0px 80px;
+  }
+}
+
+/* Responsive Containers */
+@media (max-width: 576px) {
+  .p-section,
+  .p-section-lg {
+    padding: 60px 0px;
+  }
+
+  .container-lg {
+    max-width: 100%;
+  }
+
+  .w-md,
+  .w-sm {
+    max-width: 100%;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* Typing Effect */
 @keyframes typing {
   from {
     width: 0;
@@ -228,6 +280,7 @@ header.p-section {
   white-space: nowrap;
 }
 
+/* Timeline */
 .timeline {
   position: relative;
   padding: 1em 0;
@@ -258,7 +311,6 @@ header.p-section {
   height: 70px;
   border-radius: 50%;
   background-color: #ffffff;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -318,6 +370,25 @@ header.p-section {
   animation: fadeIn 0.6s ease forwards 0.6s;
 }
 
+/* Responsive Timeline */
+@media (max-width: 992px) {
+  .timeline-item .timeline-content {
+    width: 90%;
+    left: 5%;
+    text-align: center;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content,
+  .timeline-item:nth-child(even) .timeline-content {
+    left: 5%;
+  }
+
+  .timeline-icon {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 /* Animation keyframes */
 @keyframes fadeInUp {
   from {
@@ -350,6 +421,7 @@ header.p-section {
   }
 }
 
+/* Shadow for Buttons */
 .shadow-btn {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Standard shadow */
   transition: box-shadow 0.3s ease-in-out; /* Smooth transition on hover */
@@ -357,4 +429,183 @@ header.p-section {
 
 .shadow-btn:hover {
   box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
+}
+
+/* Footer Responsive */
+footer .list-inline-item {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  footer .list-inline-item {
+    text-align: center;
+  }
+
+  footer .text-md-end {
+    text-align: center !important;
+  }
+}
+
+/* Responsive Project Section */
+@media (max-width: 768px) {
+  #portfolio .card {
+    margin-bottom: 20px; /* Add some spacing between cards on smaller screens */
+  }
+
+  #portfolio .card h3 {
+    font-size: 1.5rem; /* Adjust the heading size for smaller screens */
+  }
+
+  #portfolio .card-body p {
+    font-size: 1rem; /* Adjust paragraph text size for better readability */
+  }
+
+  #portfolio .card-footer {
+    padding: 0.75rem 1rem; /* Adjust padding for footer in cards */
+    font-size: 0.9rem; /* Adjust footer text size */
+  }
+
+  #portfolio .background-image {
+    height: 150px; /* Reduce image height for smaller screens */
+  }
+
+  #portfolio .row {
+    margin: 0; /* Remove row margin to utilize full width */
+  }
+
+  #portfolio .col-sm-6,
+  #portfolio .col-lg-4 {
+    width: 100%; /* Make each card take full width on small screens */
+  }
+
+  #portfolio .card h3 {
+    font-size: 1.2rem; /* Smaller font for headers in project cards */
+  }
+
+  #portfolio .card-body p {
+    font-size: 0.95rem; /* Smaller font for paragraphs in project cards */
+  }
+
+  #portfolio .card-footer {
+    font-size: 0.85rem; /* Smaller font for footer in project cards */
+  }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 576px) {
+  #portfolio .background-image {
+    height: 120px; /* Further reduce image height for very small screens */
+  }
+
+  #portfolio .card-footer {
+    font-size: 0.8rem; /* Adjust footer text size further */
+    text-align: center; /* Center-align footer text */
+  }
+
+  #portfolio .card-body p {
+    font-size: 0.9rem; /* Adjust text size for readability */
+  }
+}
+
+/* Company Section - Responsive Design */
+
+/* For screens between 768px and 992px */
+@media (min-width: 768px) and (max-width: 992px) {
+  .timeline-content {
+    width: 100%;
+    left: 0;
+    text-align: center;
+    padding: 2em 1em; /* Increase padding for spacing */
+  }
+
+  .timeline-icon {
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30px; /* Position the icon above the content */
+  }
+
+  .timeline-item {
+    padding-top: 60px; /* Add padding to avoid overlap between icon and content */
+    margin-bottom: 50px; /* Add margin between timeline items */
+  }
+
+  .timeline-content h5 {
+    margin-top: 50px; /* Add margin to account for the icon placement */
+    font-size: 1.5rem; /* Adjust the font size for better readability */
+  }
+
+  .timeline-content p {
+    font-size: 1rem; /* Adjust text size for readability */
+    margin-bottom: 15px;
+  }
+
+  .timeline {
+    padding: 0; /* Remove extra padding from the timeline container */
+  }
+
+  .timeline::before {
+    width: 2px; /* Thinner line for small screens */
+  }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+  .timeline-content {
+    width: 100%;
+    left: 0;
+    text-align: center;
+    padding: 1em; /* Adjust padding for better spacing */
+  }
+
+  .timeline-icon {
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30px; /* Position the icon above the content */
+  }
+
+  .timeline-item {
+    padding-top: 60px; /* Add padding to avoid overlap between icon and content */
+    margin-bottom: 50px; /* Add margin between timeline items */
+  }
+
+  .timeline-content h5 {
+    margin-top: 60px; /* Add margin to account for the icon placement */
+    font-size: 1.2rem; /* Adjust the font size for better readability */
+  }
+
+  .timeline-content p {
+    font-size: 1rem; /* Adjust text size for readability */
+    margin-bottom: 15px;
+  }
+
+  .timeline {
+    padding: 0; /* Remove extra padding from the timeline container */
+  }
+
+  .timeline-item {
+    margin-bottom: 50px; /* Add margin between timeline items */
+  }
+
+  .timeline::before {
+    width: 2px; /* Thinner line for small screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .timeline-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .timeline-content {
+    padding: 0.5em 1em; /* Reduce padding for very small screens */
+  }
+
+  .timeline-content h5 {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  .timeline-content p {
+    font-size: 0.9rem; /* Adjust text size for readability */
+  }
 }
