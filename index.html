@@ -198,6 +198,52 @@
         >
 
         <div class="timeline">
+
+          <div class="timeline-item mb-4">
+            <div class="timeline-icon">
+              <img
+                src="images/cisco.png"
+                alt="Cisco"
+                class="rounded-circle img-fluid"
+              />
+            </div>
+            <div class="timeline-content">
+              <h5>Cisco</h5>
+              <p class="text-muted">Amherst, MA | Jan 2025 - May 2025</p>
+              <p style="text-align: justify">
+                <ul>
+                  <li>Developing an agentic RAG framework that enhances LLMs with user-specific graphs to personalize text generation.</li>
+                  <li>Incorporating reasoning into the RAG pipeline, enabling more efficient data retrieval for in-context learning of LLMs.</li>
+                  <li>Established a baseline metric of LLM personalization through RAG, using LLaMA-3.1-8B and distilled DeepSeek-R1</li>
+                  
+                </ul>
+                
+              </p>
+            </div>
+          </div>
+
+
+          <div class="timeline-item mb-4">
+            <div class="timeline-icon">
+              <img
+                src="images/ansr.png"
+                alt="ANSR LAB"
+                class="rounded-circle img-fluid"
+              />
+            </div>
+            <div class="timeline-content">
+              <h5>Advanced Networked Systems Research Lab</h5>
+              <p class="text-muted">Amherst, MA | Sep 2024 - Jan 2025</p>
+              <p style="text-align: justify">
+                <ul>
+                  <li>Implemented consensus algorithms (Lazy and Chain Replication) to enhance fault tolerance in the XDN system.</li>
+                  <li>Proposed and built an optimized interoperability pipeline for Java and C# integration using CoreCLR and JVM.</li>
+                  <li>Reduced the cross language call latency in this pipeline by 40% enabling XDN to support any consensus algorithm</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+
           <!-- Interactive Brokers -->
           <div class="timeline-item mb-4">
             <div class="timeline-icon">
@@ -210,17 +256,14 @@
             <div class="timeline-content">
               <h5>Interactive Brokers</h5>
               <p class="text-muted">Greenwich, CT | Jun 2024 - Aug 2024</p>
-              <p style="text-align: justify">
-                Developed formal models of complex distributed trading protocols
-                (written in C++) using P language and C#, tested for
-                consistency, fault tolerance, and latency properties. Identified
-                a critical bug in real-time data access for multi-regional
-                clients due to asynchronous request delays. Proposed a working
-                solution utilizing Logical Lamport clocks, ensuring correctness
-                across distributed environments. Enabled Java method invocation
-                in a P runtime environment by implementing a C++ bridge that
-                utilizes Java Native Interface, enhancing the interoperability
-                of the runtime environment.
+              <p style="text-align: justify;">
+                <ul>
+                  <li>Developed the logic for the formal models of distributed trading protocols using P language, C# and state machines.</li>
+                  <li>Tested for consistency, fault tolerance, and latency specifications on these models for 1000 users.</li>
+                  <li>Identified a critical vulnerability in real-time data access for multi-regional clients due to asynchronous network delays.</li>
+                  <li>Proposed a working solution with Logical Lamport clocks, ensuring 100% correctness across distributed environments.</li>
+                  <li>Automated Java method invocation in a P runtime by implementing a C++ bridge, boosting efficiency by 90%.</li>
+                </ul>
               </p>
             </div>
           </div>
@@ -238,13 +281,19 @@
               <h5>Undergraduate Research Assistant</h5>
               <p class="text-muted">VJTI Mumbai, India | Aug 2022 - May 2023</p>
               <p style="text-align: justify">
-                Proposed an AI-based novel information extraction workflow for
-                Dark Web corpus, prioritizing retrieval of critical data from
-                unstructured text on illegal activities, contributing to
-                efficient Dark Web analysis. Eliminated the need for manual data
-                labeling for named entity recognition of unseen classes in Dark
-                Web Corpus by leveraging information in the ConceptNet knowledge
-                graph, achieving a 29.2% increase in F1 score.
+                <ul>
+                  <li>Proposed an AI-based novel information extraction workflow for
+                    Dark Web corpus.</li>
+                  <li>Prioritized retrieval of critical data from
+                    unstructured text on illegal activities, contributing to
+                    efficient Dark Web analysis.</li>
+                  <li>Eliminated the need for manual data
+                    labeling for named entity recognition of unseen classes in Dark
+                    Web Corpus by leveraging information in the ConceptNet knowledge
+                    graph, achieving a 29.2% increase in F1 score.</li>
+                  
+                </ul>
+                
               </p>
             </div>
           </div>
@@ -262,14 +311,14 @@
               <h5>Morgan Stanley</h5>
               <p class="text-muted">Mumbai, India | May 2022 - Jul 2022</p>
               <p style="text-align: justify">
-                Developed a full-stack internal web tool (Spring Boot, Angular,
-                TypeScript) from ground up to address the challenge of
-                unauthorized database updates, currently utilized by 7 different
-                teams. Built a dynamic and reusable Angular UI for efficiently
-                rendering and filtering amongst 10,000+ rows from each database
-                table based on the CRUD operations. Optimized a Python script to
-                synchronize the DEV Table with PROD Table containing ∼28M rows,
-                drastically reducing the execution time from 8hrs to 15 mins.
+                <ul>
+                  <li>Created a full-stack internal web tool with 10+ features using Spring Boot, Angular, TypeScript from scratch.</li>
+                  <li>Addressed the challenge of unauthorized database updates through this tool which is now being utilized by 7 teams.</li>
+                  <li>Built a reusable Angular UI for efficiently filtering amongst 10,000+ rows to perform visual CRUD operations.</li>
+                  <li>Optimized Python script for syncing DEV Table with ∼28M rows, reducing execution time from 8hrs to 15 mins.</li>
+                  <li>Collaborated with the finance team to understand requirements and include their feedback in development process.</li>
+                </ul>
+              </p>
               </p>
             </div>
           </div>
@@ -287,12 +336,17 @@
               <h5>Jobdae (Startup)</h5>
               <p class="text-muted">Remote, India | May 2021 - Jul 2021</p>
               <p style="text-align: justify">
-                Designed and implemented back-end web architecture using Python,
-                Django, and MySQL, created REST APIs defining functionality for
-                profile management and job application tracking. Developed an
-                automated email notification system that promptly informs
-                clients of job application submissions and status updates in
-                real-time, boosting user engagement.
+                <ul>
+                  <li>Designed and implemented back-end web architecture using Python,
+                    Django, and MySQL</li>
+                  <li>Created REST APIs defining functionality for
+                    profile management and job application tracking.</li>
+                  <li>Developed an
+                    automated email notification system that promptly informs
+                    clients of job application submissions and status updates in
+                    real-time, boosting user engagement.</li>
+                
+                </ul>
               </p>
             </div>
           </div>
